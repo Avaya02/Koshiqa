@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex w-screen h-[900px] flex-col bg-custom-yellow'>
+    <div className='flex overflow-x-hidden w-screen h-[900px] flex-col bg-custom-yellow'>
     
     <NavBar />
       
@@ -29,10 +29,12 @@ const Home = () => {
       <div className="absolute w-[26px] h-[2px] bg-white top-[18px]"></div>
       <div className="absolute w-[26px] h-[2px] bg-white top-[30px]"></div>
     </button> */}
-    <button className={`absolute top-5 right-5 z-40 mr-10 sm:mt-2 sm:mr-1 bg-black rounded-full p-2 ${menuOpen ? 'hidden' : 'block'}`} onClick={toggleMenu}>
+   
+
+<button className={`absolute top-5 right-5 z-40 mr-10 bg-black rounded-full p-2 ${menuOpen ? 'hidden' : 'block'}`} onClick={toggleMenu}>
   <svg width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="3" y1="8" x2="21" y2="8" />
-    <line x1="3" y1="16" x2="21" y2="16" />
+  <line x1="3" y1="8" x2="21" y2="8" />
+  <line x1="3" y1="16" x2="21" y2="16" />
   </svg>
 </button>
 
