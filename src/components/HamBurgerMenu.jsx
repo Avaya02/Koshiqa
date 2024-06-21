@@ -10,8 +10,8 @@ import App from '../App';
 
 const HamBurgerMenu = ({ isOpen, toggleMenu }) => {
   return (
-    <div className={ ` flex items-center justify-center fixed top-0 right-0 w-[551px] h-full  bg-black text-white transition-transform ${isOpen ? 'z-60' : 'z-40'} transform ${isOpen ?  'translate-x-0' : 'translate-x-full'}`}>
-      <button className="absolute top-5 right-5" onClick={toggleMenu}>
+    <div className={`flex items-center justify-center fixed top-0 right-0 w-full md:w-[551px] h-full bg-black text-white transition-transform transform ${isOpen ? 'translate-x-0 z-50' : 'translate-x-full z-30'}`}>
+      <button className="absolute top-5 right-5 z-50" onClick={toggleMenu}>
         <svg width="24" height="24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <line x1="18" y1="6" x2="6" y2="18" />
           <line x1="6" y1="6" x2="18" y2="18" />
