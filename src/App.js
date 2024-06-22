@@ -1,11 +1,11 @@
 import "./App.css";
 import Home from "./components/Home";
-import NavBar from "./components/NavBar";
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className=" w-screen min-h-screen flex flex-col bg-custom-yellow">
+    <div className="  w-screen min-h-screen flex flex-col bg-custom-yellow">
 
     {/* <NavBar/> */}
     <Routes>
